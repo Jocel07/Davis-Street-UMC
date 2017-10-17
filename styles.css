@@ -1,0 +1,159 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.logo{
+	margin: 0px auto 5px;
+}
+
+/*
+.overlay {
+    -webkit-filter:brightness(80%);
+    -moz-filter:brightness(80%);
+    filter: url(#brightness);
+    filter:brightness(80%);
+}*/
+
+.bg-circle
+{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 14px 4px;
+  color: #ececec;
+  text-align: center;
+  border-radius: 50%;
+	margin: 5px 5px;
+}
+
+.bg-circle a, a:hover, .media a:focus
+{
+  text-decoration: none !important;
+  outline: none;
+  color: #ececec;
+}
+
+.footerLogo {
+	margin: 0;
+	height: 100%;
+}
+
+.carousel-caption {
+	padding: 20px 40px;
+	background-color:rgba(0, 0, 0, 0.5);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+@media (max-width: 768px) {
+	.fa-2x {
+  font-size: 1em;
+}
+	.bg-circle
+{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 3px 5px;
+  color: #ececec;
+  text-align: center;
+  border-radius: 50%;
+	margin: 2px 2px;
+}
+	.container-fluid .container {
+	padding: 0;
+}
+	.featurette > #map {
+		min-height: 500px;		
+	}
+}
+
+@media (max-width: 576px) {
+	.container-fluid {
+	padding: 0;
+}
+	.container-fluid .container .center {
+	padding-left: 0;
+}
+}
+
+.center{
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.carousel-caption > h1 > a{
+	color: white;
+}
+
+.carousel-caption > h1 > a:hover{
+	color: lightgray;
+}
+
+.carousel-caption > p{
+	color: lightgray;
+}
+
+.navbar-nav {
+	letter-spacing: 1px;
+}
+
+.navbar-nav > li{
+	padding: 0 8px;
+}
+
+.navbar-collapse .navbar-nav {
+	background-color: #fff;
+	color: #212529;
+}
+
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+/*
+.fadeIn {
+	-webkit-animation: animat_show 1.5s;
+	animation: animat_show 1.5s;
+	visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+*/
+
+/* animation */
+.animateLeft {
+	-webkit-animation: slideR 2s forwards;
+  -moz-animation: slideR 2s forwards;
+  animation: slideR 2s forwards;
+}
+
+@keyframes slideR {
+  0% {
+    transform: translateX(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animateRight {
+	-webkit-animation: slideL 2s forwards;
+  -moz-animation: slideL 2s forwards;
+  animation: slideL 2s forwards;
+}
+
+@keyframes slideL {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
